@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &992525467585002692
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 992525467585002691}
+  - component: {fileID: 992525467585002690}
+  - component: {fileID: 992525467585002689}
+  m_Layer: 0
+  m_Name: Enemy Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &992525467585002691
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992525467585002692}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &992525467585002690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992525467585002692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de44b3d11c1e38b4bb63fa29f9c5474d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  indexWeight: 050000000300000001000000
+  indexWeightMaxRange: 000000000000000000000000
+  enemyTable:
+  - {fileID: 8178819431341557499, guid: 7bce7bbf0d71ed242a64ffcfbd49cb69, type: 3}
+  - {fileID: 8178819431341557499, guid: f07f1846c17a94a499f9fc94307b1aa2, type: 3}
+  - {fileID: 6106178823029760868, guid: 7551451f1aa86c6439dc1b7a002325e6, type: 3}
+  maxEnemies: 20
+  spawnInterval: 1
+  spawnArea: {fileID: 992525467585002689}
+  spawnVfx: {fileID: 6121842430322406555, guid: 39436b37e85db7043adbfe6cc9a24014, type: 3}
+--- !u!58 &992525467585002689
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992525467585002692}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 30

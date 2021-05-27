@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &992525467585002692
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 992525467585002691}
+  - component: {fileID: 705853866278195810}
+  - component: {fileID: 992525467585002689}
+  m_Layer: 0
+  m_Name: Pickup Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &992525467585002691
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992525467585002692}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &705853866278195810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992525467585002692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b063dd6f60ac8d1478a870718b9d9728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  indexWeight: 000000000000000000000000000000000000000000000000
+  indexWeightMaxRange: 030000000100000003000000020000000200000002000000
+  pickupTable:
+  - {fileID: 6762879927230205564, guid: b1ec89f89edd64c49aa93920dc08c8dc, type: 3}
+  - {fileID: 9154346815361788577, guid: ef4df28d01e71964781cf005f96539c3, type: 3}
+  - {fileID: 7386897668006568072, guid: 41bad4c4555a6e8499d77441ff38d2dd, type: 3}
+  - {fileID: 5546082872658025423, guid: 8863ed504cd458246bbf9fc91d4c0043, type: 3}
+  - {fileID: 8534218862596715126, guid: d1f4fec5aec8ccf498fc214b0c9b3799, type: 3}
+  - {fileID: 5204263958552637311, guid: 36e12794bcfb0774ca06a2b5b72dddb8, type: 3}
+  maxPickups: 30
+  spawnInterval: 5
+  spawnArea: {fileID: 992525467585002689}
+  spawnVfx: {fileID: 6121842430322406555, guid: 13b811b3003c1b44d8c933d4fdb24ee8, type: 3}
+--- !u!58 &992525467585002689
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992525467585002692}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 30
